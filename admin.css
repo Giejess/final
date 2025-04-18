@@ -1,0 +1,115 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-content {
+    width: 100%;
+    height: 100vh;
+}
+
+.navigation {
+    padding: 1% 10% 1% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+.nav-brand {
+    font-size: 25px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reports {
+    padding: 2% 10%;
+}
+
+.itemReport {
+    margin: 3%;
+    width: 100%;
+    height: fit-content;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.reportCard {
+    width: 200px;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #edd4b2;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    margin: 5px 0px;
+}
+
+.spacing {
+    margin: 3px 0px;
+}
+
+.reportInfo {
+    width: 600px;
+    padding: 2%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.info {
+    margin: 20px;
+}
+
+.message {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+span {
+    font-style: italic;
+    color: steelblue;
+}
+
+.btnDiv {
+    padding: 2%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 200px;
+    border-color: transparent;
+    background-color: crimson;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}

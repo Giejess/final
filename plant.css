@@ -1,0 +1,64 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./isto2.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .user-content {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+            border-radius: 50px;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .nav-brand {
+            font-size: 24px;
+        }
+
+        .nav-items a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .nav-items a:hover {
+            text-decoration: underline;
+        }
+
+        .contents {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .plant-card {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for plant cards */
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            color: #000; /* Text color for plant cards */
+        }
+
+        .plant-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+       .left-aligned {
+            text-align: left;
+        }

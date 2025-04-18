@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Page</title>
+    <link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Products</h1>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="./papaya1.jfif" alt="Product 1">
+                <h2>1 Month old</h2>
+                <p>Price:  ₱100.00</p>
+                <input type="number" id="product1-quantity" min="1" value="1">
+                <button onclick="addToCart('Product 1', 100.00, document.getElementById('product1-quantity').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./papaya3w.jfif" alt="Product 2">
+                <h2>2 Month old</h2>
+                <p>Price:  ₱150.00</p>
+                <input type="number" id="product2-quantity" min="1" value="1">
+                <button onclick="addToCart('Product 2', 150.00, document.getElementById('product2-quantity').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="./papaya1m.jfif" alt="Product 3">
+                <h2>3 Month old</h2>
+                <p>Price:  ₱200.00</p>
+                <input type="number" id="product3-quantity" min="1" value="1">
+                <button onclick="addToCart('Product 3', 200.00, document.getElementById('product3-quantity').value)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+        <div class="about-link">
+            <p><a href="plant.html"><b>Back</b></a></p><br>
+        </div>
+    </div>
+       
+
+    <script src="./nav.js"></script>
+</body>
+</html>

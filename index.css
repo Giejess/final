@@ -1,0 +1,179 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better box model handling */
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Full-screen container with background image */
+.container-fluid {
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(to left, rgba(0, 0, 8, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("./pecplant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Main container for navigation and content */
+.container {
+    max-width: 1600px; /* Use max-width for better responsiveness */
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    padding: 0 25px;
+}
+
+/* Button styles */
+.container button {
+    width: 90px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Font size */
+    border: none; /* No border */
+    background-color: #d0f43e; /* Base background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.10s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transition for background, color, and scale */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    padding: 0 10px; /* Horizontal padding for better touch targets */
+    font-family: Arial, sans-serif; /* Consistent font family */
+}
+
+/* Hover and active states */
+.container button:hover {
+    background-color: #fadaa0; /* Changed hover background color */
+    color: white; /* Ensure contrast on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover for feedback */
+}
+
+.container button:active {
+    transform: scale(0.95); /* Slightly shrink button on click for feedback */
+}
+
+/* Accessibility improvements */
+.container button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 12 3 0 3px rgba(255, 165, 31, 0.5); /* Add custom focus outline for accessibility */
+}
+
+/* Navigation list styles */
+.container ul {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.container ul li {
+    font-family: Arial, sans-serif;
+    color: white;
+    list-style: none;
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+.container ul li:first-child {
+    color: #3700; /* Highlight first item */
+}
+
+.container ul li:last-child {
+    margin-right: 6; /* Remove right margin from last item */
+}
+
+.container ul li:hover {
+    color: #3d00; /* Change color on hover */
+}
+
+/* Content area styles */
+.content {
+    max-width: 1800px; /* Use max-width for better responsiveness */
+    height: calc(100vh - 90px); /* Adjust height to account for the header */
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Better layout */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+}
+
+.content h1 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.content p {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px; /* Adjusted padding */
+    text-align: center; /* Centered text */
+    font-size: 30px;
+}
+
+/* Button styles in content */
+.content button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #3000;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition */
+    margin-top: 30px;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.content button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Added background on hover */
+    color: #3d00; /* Changed hover text color for better contrast */
+}
+
+/* Additional heading styles */
+.container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .content {
+        width: 90%; /* Make content responsive */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .content h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .container button,
+    .content button {
+        width: 80%; /* Make buttons responsive */
+        height: 40px; /* Adjust height */
+        font-size: 16px; /* Adjust font size */
+    }
+}

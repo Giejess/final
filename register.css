@@ -1,0 +1,46 @@
+ body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('./farming.jpg') no-repeat;
+        background-size: cover;
+        background-position: center; 
+        font-family: Arial, sans-serif;
+    }
+    .card {
+        width: 350px;
+        height: fit-content;
+        padding: 3%;
+        border-radius: 10px;
+        background-color: #333;
+    }
+    .header-form {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    .inputform {
+        width: 300px;
+        padding: 8px 0px 8px 0px;
+        margin: 5px 0px 5px 0px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    a {
+        color: white;
+    }
+    .alert {
+        text-align: center;
+        color: crimson;
+        margin-bottom: 2%;
+        font-weight: bold;
+    }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./admin.css">
+    <title>Admin Dashboard</title>
+</head>
+<script src="./admin.js"></script>
+<body onload="loadPage()">
+    <div class="admin-content">
+        <nav class="navigation">
+			<h1 class="nav-brand" style="color: #fff;">PLANT HEALTH CARE</h1>
+			<div class="nav-items">
+                <p style="color: #fff;" id="admin"></p>
+				<a onclick="logoutAdmin()">logout</a>
+			</div>
+		</nav>
+        <div class="reports" id="reports">
+            <h1 style="text-align: center;">Planting Reports</h1>
+            <div id="items"></div>
+        </div>
+    </div>
+</body>
+</html> 

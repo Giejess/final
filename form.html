@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <div class="form-content">
+        <div class="form">
+            <div class="cardProfile">
+                <img class="img" id="img" alt="Plant">
+                <div class="card-body">
+                    <label id="name"></label> <br>
+                    <label id="age"></label> <br>
+                    <label id="type"></label>
+                </div>
+            </div>
+            <div class="adoptForm">
+                <h1 style="text-align: center;">Plant Application Form</h1>
+                <div class="inputForm">
+                    <div class="d-flex">
+                        <div class="form-control" style="width: 50%;">
+                            <label>Person buy the plant<span>*</span></label> <br>
+                            <p id="fullname" class="input"></p>
+                        </div>
+                        <div class="form-control" style="width: 37%;">
+                            <label>Enter your age<span>*</span></label> <br>
+                            <input id="ageForm" class="input" type="number">
+                        </div>
+                    </div>
+                    <div class="form-control" style="width: 95.5%;">
+                        <label>Enter you home address<span>*</span> (complete)</label> <br>
+                        <input id="addressForm" class="input" type="text" placeholder="barangay / city / province">
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-control" style="width: 50%;">
+                            <label>Enter your email address<span>*</span></label> <br>
+                            <input id="emailForm" class="input" type="email" placeholder="@gmail.com">
+                        </div>
+                        <div class="form-control" style="width: 37%;">
+                            <label>Enter your cp number<span>*</span></label> <br>
+                            <input id="cpNumForm" class="input" type="number" placeholder="09">
+                        </div>
+                    </div>
+                    <div class="form-control" style="width: 96%;">
+                        <label>Why you want to be farmer ?<span>*</span></label> <br>
+                        <textarea id="QAForm" rows="5" placeholder="..."></textarea>
+                    </div>
+                    <div class="btnDiv">
+                        <button class="btn" onclick="submitForm()" style="background-color: #0d6efd;">I want to help in our nature</button>
+                        <button class="btn" onclick="back()" style="background-color: crimson;">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>

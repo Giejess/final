@@ -1,0 +1,214 @@
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --primary-color: #00bcd4;
+    --background-color: #35424a;
+    --text-color: white;
+    --light-text-color: #ffffff;
+    --heading-font-size: 2.25rem; /* 36px */
+    --subheading-font-size: 2.8125rem; /* 45px */
+    /*--icon-size: 60px; */
+    --box-padding: 30px;
+    --container-padding: 50px 100px;
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+ }
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: var(--container-padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to left, rgba(0, 0, 8, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(./ring-9.jpg) no-repeat center center/cover;
+}
+.icon {
+    display: inline-block; /* Align icons horizontally */
+    margin: 10px; /* Space between icons */
+    text-align: center; /* Center the content */
+}
+
+.icon i {
+    font-size: 24px; /* Adjust the size of the Font Awesome icon */
+    color: #007bff; /* Change the color of the icon */
+}
+
+.icon img {
+    width: 50px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.contact .content {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: var(--heading-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.contact .content p {
+    font-size: var(--subheading-font-size);
+    color: var(--text-color);
+}
+
+.container {
+    width: 130%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: var(--box-padding) 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.container .contactInfo .box .icon {
+    min-width: var(--icon-size);
+    height: var(--icon-size);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.375rem; /* 22px */
+}
+
+.container .contactInfo .box .text {
+    margin-left: -0px;
+    font-size: 1rem; /* 16px */
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.contactForm {
+    width: 30%;
+    padding: 20px;
+    background: var(--background-color);
+    color: var(--light-text-color);
+}
+
+.contactForm h2 {
+    font-size: 1.875rem; /* 30px */
+    color: #d5e4dc;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+}
+    /* General Styles for Input and Textarea */
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+/* Label Styles */
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none; /* Corrected from 'more' to 'none' */
+    transition: 0.5s;
+    color: #666;
+}
+
+/* Focus and Invalid State Styles */
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:invalid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:invalid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+/* Submit Button Styles */
+.contactForm input[type="submit"] {
+    width: 250px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 18px;
+}
+
+/* Button Styles */
+.contactForm button {
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding: 0 20px; /* Combined padding for left and right */
+    color: #dfd6d6;
+}
+
+/* Link Styles */
+.contactForm-link p a {
+    font-size: 30px;          /* Font size for the link */
+    position: relative;       /* Positioning context for pseudo-elements */
+    color: white;             /* Text color */
+    padding: 30px 0 20px;    /* Padding: top, vertical, bottom */
+    max-width: 60%;          /* Maximum width of the link */
+    margin: 100px 50px 0 0;  /* Margin: top, right, bottom, left */
+    text-decoration: none;    /* Remove underline from link */
+    transition: color 0.3s;   /* Smooth transition for color change */
+}
+
+/* Hover Effect */
+.contactForm-link p a:hover {
+    color: #bb93a0;           /* Change color on hover */
+}
+/* Responsive Styles */
+@media (max-width: 91px)
+ {
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}

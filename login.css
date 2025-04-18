@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family-Poppins:wght@300;400;500;600;700;800;900& display-swap");
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: Poppins,sans-serif;
+	}
+	body {
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: url('./Plant-health-care-Perth.png') no-repeat;
+		background-size: cover;
+		background-position: center; 
+
+	}
+	.wrapper{
+		width: 500px;
+		background: clear;
+		border: 2px solid rgba(255, 255, 255, .2);
+		background-color: #333;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+		color: #fff;
+		border-radius: 50px;
+		padding: 30px 40px;
+		box-lines: 10px;
+
+	}
+	.wrapper h1{
+		font-size: 36px;
+		text-align: center;
+	}
+	.wrapper .input-box{
+		position: relative;
+		width: 420px;
+		height: 50px;
+		margin: 50px 0;
+	}
+	.input-box input{
+		width: 420px;
+		height: 50px;
+		background: transparent;
+		border: none;
+		outline: none;
+		border: 2px solid rgba(255, 255,255, .2);
+		border-radius: 40px;
+		font-size: 16px;
+		color: #fff;
+		padding: 20px 45px 20px 20px;
+	}
+	.input-box input::placeholder{
+		color: white;
+	}
+	.input-box i{
+		position: right;
+		right: 100px;
+		transform: translateY(-50px);
+		font-size: 20px;
+	}
+	.wrapper .remember-forgot{
+		display: flex;
+		justify-content: space-between;
+		font-size: 14.5px;
+		margin: -15px 0 15px;
+	}
+	.remember-forgot label input{
+		accent-color: #fff;
+		margin-right: 3px;
+	}
+    .remember-forgot a{
+    	color: #fff;
+    	text-decoration: none;
+    }
+    .remember-forgot a:hover{
+    	text-decoration: underline;
+    }
+    .btn a{
+    	width: 500;
+    	height: 45px;
+    	background: #fff;
+    	border: none;
+    	outline: none;
+    	border-radius: 100px;
+    	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    	cursor: pointer;
+    	font-size: 16px;
+    	color: #333;
+    	font-weight: 600;
+    	position: center;
+    }
+    .wrapper .register-link{
+    	font-size: 14.5px;
+    	text-align: center;
+    	margin-top: 20px;
+    }
+    .register-link p a{
+    	color: #fff;
+    	text-decoration: none;
+    	font-weight: 600;
+    }
+    .register-link p a:hover{
+    	text-decoration: underline;
+    }
+	.loginBtn {
+		font-size: 20px;
+		width: 100px;
+		cursor: pointer;
+		text-align: center;
+	}
+	.alert {
+		text-align: center;
+		color: crimson;
+		margin-bottom: 2%;
+		font-weight: bold;
+	}

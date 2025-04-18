@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <div class="card">
+        <header class="header-form">Registration Form</header>
+        <div style="margin: 10px 0px 10px 0px;">
+            <center>
+                <input 
+                    id="fullname"
+                    class="inputform"
+                    type="text"
+                    placeholder="Fullname"
+                    required
+                >
+                <input 
+                    id="username"
+                    class="inputform"
+                    type="text"
+                    placeholder="Username"
+                    required
+                >
+                <input 
+                    id="password"
+                    class="inputform"
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+                <input 
+                    id="confirm-password"
+                    class="inputform"
+                    type="password"
+                    placeholder="Confirm password"
+                    required
+                > 
+                <br>
+                <button onclick="regisForm()" class="btn">Submit</button> 
+                <br>
+                <p class="alert" id="alertReg"></p>
+                <p style="color: white;">Alredy have an account? <a href="login.html">Login</a></p>
+            </center>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

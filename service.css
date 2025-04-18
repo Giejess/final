@@ -1,0 +1,89 @@
+ body {
+            margin: 0;
+            background-image: linear-gradient(to left, rgba(0, 0, 8, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('./asd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #111111; /* Default text color */
+            font-family: Arial, sans-serif; /* Set a default font */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px; /* Limit the width for better readability */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        ul#services {
+            padding: 0;
+        }
+
+        ul#services li {
+            list-style: none;
+            padding: 20px;
+            border: #ebdfb7 solid 1px;
+            margin-bottom: 10px;
+            background: hsla(251, 92%, 95%, 0.9);
+            border-radius: 5px; /* Rounded corners for list items */
+        }
+
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #e8491d;
+            text-align: center;
+        }
+
+         h3 {
+            text-align: center;
+        }
+        h1 {
+            text-align: center; /* Center the text */
+            font-size: 50px; /* Font size */
+            color: #927f2b; /* Text color */
+            font-family: 'Arial', sans-serif; /* Font family for better readability */
+            margin: 20px 0; /* Add vertical margin for spacing */
+            padding: 10px; /* Add padding for better spacing */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            letter-spacing: 1px; /* Slightly increase space between letters */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+        
+        /* Optional: Add a hover effect */
+        h1:hover {
+            color: #7abf2a; /* Change color on hover */
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px; /* Slightly smaller font for paragraphs */
+        }
+
+        .about-link p a {
+            font-size: 20px;
+            color: rgb(214, 214, 235);
+            padding: 15px 30px; /* Adjusted padding for better button appearance */
+            margin: 20px auto;
+            text-decoration: none;
+            background-color: rgb(50, 50, 150);
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-link p a:hover {
+            background-color: rgb(70, 70, 200);
+            transform: translateY(-3px);
+        }
+
+        .about-link p a:active {
+            transform: translateY(1px);
+        }

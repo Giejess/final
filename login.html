@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEALTH PLANTCARE LOGIN FORM</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<h1>Login</h1>
+		<div class="input-box">
+			<input 
+				id="login-username"
+				type="text" 
+				placeholder="Username" 
+				required
+			>
+			<i class="bx bxs-user"></i>
+		</div>
+		<div class="input-box">
+			<input 
+				id="login-password"
+				type="password" 
+				placeholder="Password"  
+				required
+			>
+			<i class="bx bxs-lock-alt"></i>
+		</div>
+		<div class="remember-forgot">
+			<label><input type="checkbox"> Remember me  </label>
+			<a href="#">Forgot password?</a>
+		</div>
+		<p class="alert" id="alert"></p>
+		<center>
+			<button onclick="loginIt()" class="loginBtn">Login</button>
+		</center>
+		<div class="register-link">
+			<p>Don't have an account ? <a href="register.html">Register</a></p>
+			<p><a href="./index.html">Back</a></p>
+		</div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>

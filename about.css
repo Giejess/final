@@ -1,0 +1,72 @@
+.about {
+    position: relative;
+    min-height: 100vh;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient(to left, rgba(0, 0, 8, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),url(./3farming.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    color: white; /* Set default text color to white */
+    text-align: center; /* Center text for better readability */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+}
+
+.image {
+    flex: 1 1 40rem;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px; /* Add rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
+}
+
+h3, h4 {
+    color: white;
+    font-size: 4rem;
+    margin: 0.5rem 0; /* Add margin for spacing */
+    text-transform: uppercase; /* Make headings uppercase for emphasis */
+    letter-spacing: 1px; /* Add letter spacing for a modern look */
+}
+
+span {
+    color: white;
+}
+
+p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.9); /* Use a semi-transparent white for better readability */
+    padding: 1rem 0;
+    line-height: 1.8; /* Adjust line height for better readability */
+    background-color: rgba(0, 0, 0, 0.5); /* Use a semi-transparent black background */
+    border-radius: 5px; /* Add rounded corners to paragraphs */
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.about-link p a {
+    font-size: 25px;
+    position: relative;
+    padding: 15px 21px; /* Adjust padding for buttons */
+    max-width: 50%;
+    margin: 20px auto; /* Center the link */
+    color: black;
+    background-color: white; /* Set a white background for contrast */
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.about-link p a:hover {
+    background-color: #e8491d; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.faded-background {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 5px 15px rgba(255, 0, 0, 0.7); /* Use rgba for a softer shadow */
+    margin: 20px 0; /* Add margin for spacing */
+}
