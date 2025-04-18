@@ -194,6 +194,7 @@
 /* Hover Effect */
 .contactForm-link p a:hover {
     color: #bb93a0;           /* Change color on hover */
+    align-text: center; 
 }
 /* Responsive Styles */
 @media (max-width: 91px)
