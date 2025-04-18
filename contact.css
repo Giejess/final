@@ -195,9 +195,7 @@
 .contactForm-link p a:hover {
     color: #bb93a0;           /* Change color on hover */ 
 }
-    .contactForm-link p {
-    text-align: center; /* Centers the text within the <p> element */
-}
+ 
 /* Responsive Styles */
 @media (max-width: 91px)
  {
