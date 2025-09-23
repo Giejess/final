@@ -1,4 +1,4 @@
-name: deploy Landerrpaherr
+name: deploy Landingapps
 
 on:
   push:
